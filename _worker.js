@@ -750,15 +750,15 @@ function getวเลสConfig(userIDs, hostName) {
       const วเลสSec =
         atob(pt) + "://" + userID + atob(at) + hostName + commonUrlPart1;
       return `<h2>UUID: ${userID}</h2>${hashSeparator}\nVless Tls
----------------------------------------------------------------
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy Tls</button>
----------------------------------------------------------------
+<button onclick='copyToClipboard("${วเลสMain}")'><i class='fas fa-download'></i></i> Copy Tls</button>
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 Vless Ntls
----------------------------------------------------------------
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy Ntls</button>
----------------------------------------------------------------`;
+<button onclick='copyToClipboard("${วเลสSec}")'><i class='fas fa-download'></i></i> Copy Ntls</button>
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖`;
     })
     .join("\n");
   const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`;
@@ -770,9 +770,7 @@ ${วเลสSec}
   const header = `
 <b style='font-size: 15px;'>Selamat Datang Di Club Gratis</b>
 
-<a href='http://yotube.com?url=${encodeURIComponent(
-    Telegram
-  )}' target='_blank'>Grup</a></p>`;
+<a href='http://t.me/club_gratis' target='_blank'>Grup</a></p>`;
 
   // HTML Head with CSS and FontAwesome library
   const htmlHead = `
@@ -818,7 +816,7 @@ ${วเลสSec}
 	  white-space: pre-wrap;
 	  word-wrap: break-word;
 	  background-color: #fff;
-	  border: 1px solid #ddd;
+	  border: 1px solid red;
 	  padding: 15px;
 	  margin: 10px 0;
 	}

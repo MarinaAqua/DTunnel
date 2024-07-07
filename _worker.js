@@ -735,9 +735,9 @@ const ed = "RUR0dW5uZWw=";
  */
 function getวเลสConfig(userIDs, hostName) {
   const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS TLS`;
-  const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS nTLS`;
+  const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS NTLS`;
   const hashSeparator =
-    "❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖";
+    "⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇";
 
   // Split the userIDs into an array
   const userIDArray = userIDs.split(",");
@@ -750,15 +750,15 @@ function getวเลสConfig(userIDs, hostName) {
       const วเลสSec =
         atob(pt) + "://" + userID + atob(at) + hostName + commonUrlPart1;
       return `<h2> VLESS CLUB GRATIS </h2>${hashSeparator}\nVless Tls
-⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 ${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class='fas fa-download'></i></i> Copy Tls</button>
-⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
+<button onclick='copyToClipboard("${วเลสMain}")'><i class='fa fa-download'></i></i> Copy Tls</button>
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 Vless Ntls
-⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 ${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class='fas fa-download'></i></i> Copy Ntls</button>
-⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇`;
+<button onclick='copyToClipboard("${วเลสSec}")'><i class='fa fa-download'></i></i> Copy Ntls</button>
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇`;
     })
     .join("\n");
   const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`;
@@ -770,7 +770,8 @@ ${วเลสSec}
   const header = `
 <b style='font-size: 15px;'>Selamat Datang Di Club Gratis</b>
 
-<a href='http://t.me/club_gratis' target='_blank'>Grup</a></p>`;
+<a href='https://bootstapadmin-darklihgtt.pages.dev/' target='_blank'><i class='fa fa-download'></i>
+Home</a></p>`;
 
   // HTML Head with CSS and FontAwesome library
   const htmlHead = `
@@ -872,8 +873,8 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
   const อาร์เรย์ไอดีผู้ใช้ = ไอดีผู้ใช้_เส้นทาง.includes(",")
     ? ไอดีผู้ใช้_เส้นทาง.split(",")
     : [ไอดีผู้ใช้_เส้นทาง];
-  const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
-  const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${ชื่อโฮสต์}&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
+  const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${hostName}&path=clubgratis#VLESS TLS`;
+  const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=/clubgratis#VLESS TLS`;
 
   const ผลลัพธ์ = อาร์เรย์ไอดีผู้ใช้.flatMap((ไอดีผู้ใช้) => {
     const การกำหนดค่าHttp = Array.from(เซ็ตพอร์ตHttp).flatMap((พอร์ต) => {

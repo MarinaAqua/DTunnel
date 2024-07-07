@@ -735,7 +735,7 @@ const ed = "RUR0dW5uZWw=";
  */
 function getวเลสConfig(userIDs, hostName) {
   const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS TLS`;
-  const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS TLS`;
+  const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS nTLS`;
   const hashSeparator =
     "################################################################";
 

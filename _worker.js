@@ -737,7 +737,7 @@ function getวเลสConfig(userIDs, hostName) {
   const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS TLS`;
   const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/clubgratis#VLESS nTLS`;
   const hashSeparator =
-    "################################################################";
+    "❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖";
 
   // Split the userIDs into an array
   const userIDArray = userIDs.split(",");
@@ -749,16 +749,16 @@ function getวเลสConfig(userIDs, hostName) {
         atob(pt) + "://" + userID + atob(at) + hostName + commonUrlPart;
       const วเลสSec =
         atob(pt) + "://" + userID + atob(at) + hostName + commonUrlPart1;
-      return `<h2>UUID: ${userID}</h2>${hashSeparator}\nVless Tls
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+      return `<h2> VLESS CLUB GRATIS </h2>${hashSeparator}\nVless Tls
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class='fas fa-download'></i></i> Copy Tls</button>
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 Vless Ntls
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇
 ${วเลสSec}
 <button onclick='copyToClipboard("${วเลสSec}")'><i class='fas fa-download'></i></i> Copy Ntls</button>
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖`;
+⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇`;
     })
     .join("\n");
   const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`;

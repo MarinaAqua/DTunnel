@@ -770,8 +770,7 @@ ${วเลสSec}
   const header = `
 <b style='font-size: 15px;'>Selamat Datang Di Club Gratis</b>
 
-<a href='https://bootstapadmin-darklihgtt.pages.dev/' target='_blank'><i class='fa fa-download'></i>
-Home</a></p>`;
+<a href='https://bootstapadmin-darklihgtt.pages.dev/' target='_blank'><i class="fa fa-home"></i> Back Home</a></p>`;
 
   // HTML Head with CSS and FontAwesome library
   const htmlHead = `

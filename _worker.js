@@ -714,12 +714,12 @@ function getวเลสConfig(userIDs, hostName) {
 		return `<h2>VLESS CLUB GRATIS </h2>${hashSeparator}\n VLESS TLS
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 ${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-copy" style="font-size:20px;color:red"></i> Copy Tls </button>
+<button class="btn btn-primary" onclick="copyToClipboard('${วเลสMain}')">Copy Tls</button>
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 VLESS NTLS
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 ${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-copy" style="font-size:20px;color:red"></i> Copy Ntls </button>
+<button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Copy Ntls</button>
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`

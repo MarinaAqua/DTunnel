@@ -702,7 +702,7 @@ const ed = 'RUR0dW5uZWw=';
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vless#VLESS TLS`;
 	const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/vless#VLESS NTLS`;
-	const hashSeparator = "▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭";
+	const hashSeparator = "▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
@@ -712,15 +712,15 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
 		return `<h2>VLESS CLUB GRATIS </h2>${hashSeparator}\n VLESS TLS
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ${วเลสMain}
-<button class="btn btn-primary" onclick="copyToClipboard('${วเลสMain}')">Copy Tls</button>
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+<button class="btn btn-primary" onclick="copyToClipboard('${วเลสMain}')"><i class="fa fa-copy" style="font-size:24px;color:white"></i>Copy Tls</button>
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 VLESS NTLS
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ${วเลสSec}
-<button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Copy Ntls</button>
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭`;
+<button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')"><i class="fa fa-copy" style="font-size:24px;color:white"></i>Copy Ntls</button>
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
 	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
@@ -730,7 +730,7 @@ ${วเลสSec}
 <p align='center'><img width="100" height="100" src="https://img.icons8.com/?size=100&id=HTeWFuVmjmpj&format=png&color=000000"/>
 <b style='font-size: 15px;'>SELAMAT DATANG DI CLUB GRATIS</b>
 
-<a href='https://vless.clubgratis.xyz' target='_blank'><i class="fa fa-home"></i>Back Menu</a></p>`;
+<a href='https://vless.clubgratis.xyz' target='_blank'><i class="fa fa-reply" style="font-size:25px;color:red"></i></i>Back Menu</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
@@ -798,6 +798,7 @@ ${วเลสSec}
 
 	<!-- Add FontAwesome library -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   `;
 
@@ -810,16 +811,18 @@ ${วเลสSec}
   <pre>${output}</pre>
   </body>
   <script>
-	function copyToClipboard(text) {
-	  navigator.clipboard.writeText(text)
-		.then(() => {
-		  alert("Copied to clipboard");
-		})
-		.catch((err) => {
-		  console.error("Failed to copy to clipboard:", err);
-		});
-	}
-  </script>
+function copyToClipboard(text) {
+  const input = document.createElement('textarea');
+  input.style.position = 'fixed';
+  input.style.opacity = 0;
+  input.value = text;
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand('Copy');
+  document.body.removeChild(input);
+  alert('Disalin');
+}
+</script>
   </html>`;
 }
 

@@ -762,7 +762,7 @@ ${วเลสSec}
 	}
 
 	a {
-	  color: #fa0000;
+	  color: #1500ff;
 	  text-decoration: none;
 	}
 	img {
@@ -786,12 +786,12 @@ ${วเลสSec}
 	  }
 
 	  a {
-		color: #1500ff;
+		color: #00ff44;
 	  }
 
 	  pre {
-		background-color: #282a36;
-		border-color: #6272a4;
+		background-color: #f0f0f0;
+		border-color: #03ffee;
 	  }
 	}
 	</style>
